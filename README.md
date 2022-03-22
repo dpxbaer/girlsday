@@ -1,6 +1,6 @@
-# Dein GirlsDay
+## Dein GirlsDay
 
-- Als IT Entwicklerin in der Agentur
+- als IT-Entwicklerin in der Agentur
 - Grundbausteine einer Internetseite
 - Scrum & Co.
 - Interaktive Webseiten
@@ -8,3 +8,7 @@
 - Vorstellung der Agentur
 - Hands on
 - Nach-Tisch
+
+## Hands on
+
+https://codesandbox.io/s/github/dpxbaer/girlsday
