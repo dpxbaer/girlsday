@@ -1,0 +1,53 @@
+:root {
+  --primary-color: red;
+  --secondary-color: lightgrey;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  /* background-color: yellow; */
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  padding: 4px;
+}
+
+button:hover {
+  border-color: var(--primary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.entry {
+    border-left: 2px solid lightgrey;
+    padding: 1rem;
+}
+
+.entry.correct {
+    border-left: 2px solid green;
+    display: none;
+}
+
+.entry.incorrect {
+    border-left: 2px solid red;
+}
+
+.entry.missing {
+    border-left: 2px solid lightgrey;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}

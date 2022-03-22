@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vokabeltrainer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js"></script>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Abfrage</h1>
+    <div id="app">
+        <h2>{{ headline }}</h2>
+        {{ message }}
+        <div v-for="(entry, index) in entries" v-bind:key="index">
+            <div class="entry" v-bind:class="{correct: isCorrect(entry), incorrect: !isCorrect(entry), missing: !entry.input}">
+                <div>{{ entry.native }}</div>
+                <input v-model="entry.input" />
+            </div>
+        </div>
+        <p>
+            {{ correctAnswered }} von {{ entries.length }} richtige Antworten
+        </p>
+        <button @click="reset">Zurücksetzen</button>
+    </div>
+
+    <!-- <img alt="app icon" src="./favicon.svg" width="200" heigth="200" /> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
