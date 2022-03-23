@@ -10,23 +10,26 @@
   </head>
 
   <body>
-    <h1>Abfrage</h1>
-    <div id="app">
-        <h2>{{ headline }}</h2>
-        {{ message }}
-        <div v-for="(entry, index) in entries" v-bind:key="index">
-            <div class="entry" v-bind:class="{correct: isCorrect(entry), incorrect: !isCorrect(entry), missing: !entry.input}">
-                <div>{{ entry.native }}</div>
-                <input v-model="entry.input" />
-            </div>
-        </div>
-        <p>
-            {{ correctAnswered }} von {{ entries.length }} richtige Antworten
-        </p>
-        <button @click="reset">Zurücksetzen</button>
-    </div>
+    <main>
+      <h1>Abfrage</h1>
+      <div id="app">
+          <h2>{{ headline }}</h2>
+          <p class="info">{{ message }}</p>
+          <div v-for="(entry, index) in entries" v-bind:key="index">
+              <div class="entry" v-bind:class="{correct: isCorrect(entry), incorrect: !isCorrect(entry), missing: !entry.input}">
+                  <div>{{ entry.native }}</div>
+                  <input v-model="entry.input" />
+              </div>
+          </div>
+          <p>
+              {{ correctAnswered }} von {{ entries.length }} richtige Antworten
+          </p>
+          <button @click="reset">Zurücksetzen</button>
+      </div>
+  
+      <img alt="Einhorn" src="./unicorn.png">
+    </main>
 
-    <!-- <img alt="app icon" src="./favicon.svg" width="200" heigth="200" /> -->
     <script src="./main.js"></script>
   </body>
 </html>

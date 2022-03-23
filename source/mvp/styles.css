@@ -27,6 +27,20 @@ h1 {
   color: var(--primary-color);
 }
 
+img {
+  margin: 1rem auto;
+  display: block;
+}
+
+input {
+  line-height: 32px;
+  width: 100%;
+}
+
+.info {
+  padding-bottom: 1rem;
+}
+
 .entry {
     border-left: 2px solid lightgrey;
     padding: 1rem;
@@ -45,9 +59,11 @@ h1 {
     border-left: 2px solid lightgrey;
 }
 
+/* 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
   }
 }
+*/
