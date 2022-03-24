@@ -9,6 +9,11 @@ const initialeVokabeln = [
   }
 ]
 
+// liest Vokabeln aus
+function ladeMeineVokabeln (listenname) {
+  return initialeVokabeln
+}
+
 const App = {
   data () {
     return {
@@ -41,12 +46,3 @@ const App = {
 }
 
 Vue.createApp(App).mount('#app')
-
-// liest im Browser gespeicherte Vokabeln aus
-function ladeMeineVokabeln (listenname) {
-  // if (listenname && localStorage.getItem(listenname)) {
-  //   return JSON.parse(localStorage.getItem(listenname))
-  // }
-
-  return initialeVokabeln
-}

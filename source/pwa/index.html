@@ -4,13 +4,7 @@
     <title>Vokabeltrainer</title>
     <!-- alle anderen Angaben hier lassen -->
     <link rel="manifest" href="manifest.json">
-    <script type="module">
-      import { installer, serviceWorker } from './modules/pwa.js';
-      (async () => {
-          const serviceWorkerRegistration = await serviceWorker('./sw.js', './');
-          installer('#installButton');
-      })()
-    </script>
+    <script type="module" src="./app.js"></script>
   </head>
 
   <body>
@@ -22,6 +16,5 @@
       <button id="installButton">Installieren</button>
     </footer>
     <script src="./main.js"></script>
-    <script src="./vokabel-editor.js"></script>
   </body>
 </html>
