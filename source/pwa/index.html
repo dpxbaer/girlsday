@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vokabeltrainer</title>
+    <!-- alle anderen Angaben hier lassen -->
+    <link rel="manifest" href="manifest.json">
+    <script type="module">
+      import { installer, serviceWorker } from './modules/pwa.js';
+      (async () => {
+          const serviceWorkerRegistration = await serviceWorker('./sw.js', './');
+          installer('#installButton');
+      })()
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <!-- alles in main lassen -->
+    </main>
+    <footer>
+      <button id="installButton">Installieren</button>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
