@@ -1,4 +1,4 @@
-const initialEntries = [
+const initialeVokabeln = [
   {
     native: 'Lehrer',
     foreign: 'teacher'
@@ -9,24 +9,20 @@ const initialEntries = [
   }
 ]
 
-function getEntries () {
-  return initialEntries
-}
-
 const App = {
   data () {
     return {
       headline: 'Vokabeln',
       message: 'Trage die richtige Lösung ein!',
-      entries: getEntries()
+      vocabulary: ladeMeineVokabeln('standard')
     }
   },
   computed: {
     correctAnswered () {
-      const correctEntries = this.entries.filter(
+      const correctVocabulary = this.vocabulary.filter(
         entry => entry.input && entry.input === entry.foreign
       )
-      return correctEntries.length
+      return correctVocabulary.length
     }
   },
   methods: {
@@ -35,7 +31,7 @@ const App = {
       return entry.input && entry.input === entry.foreign
     },
     reset () {
-      this.entries.forEach(entry => {
+      this.vocabulary.forEach(entry => {
         if (entry.input) {
           entry.input = null
         }
@@ -45,3 +41,12 @@ const App = {
 }
 
 Vue.createApp(App).mount('#app')
+
+// liest im Browser gespeicherte Vokabeln aus
+function ladeMeineVokabeln (listenname) {
+  // if (listenname && localStorage.getItem(listenname)) {
+  //   return JSON.parse(localStorage.getItem(listenname))
+  // }
+
+  return initialeVokabeln
+}
