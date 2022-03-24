@@ -1,0 +1,53 @@
+<html lang="de">
+    <head>
+        <title>GirlsDay</title>
+        <meta charset="UTF-8" />
+        <style>
+            h1 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>GirlsDay</h1>
+            <h2>Einführung</h2>
+            <p>Am 28.4. ist <a href="https://www.girls-day.de">GirlsDay</a>! Sei dabei, wenn du bei Pixelpark, <b>HTML lernen</b> möchtest.</p>
+            <p>Melde dich einfach unten an.</p>
+            <h2>Voraussetzung</h2>
+            <p>Ein eigener Computer wird vorausgesetzt.</p>
+            <img src="../mvp/unicorn.png" alt="Einhorn">
+            <!-- <div class="spalten"> -->
+                <h3>Bringe bitte mit</h3>
+                <ul>
+                    <li>einen eigenen Computer</li>
+                    <li>ein sauberes Taschentuch</li>
+                </ul>
+                <h3>Inhalte</h3>
+                <ol>
+                    <li>HTML, Styling mit CSS</li>
+                    <li>Javascript</li>
+                    <li>und mehr</li>
+                </ol>
+            <!-- </div> -->
+            <h2>Anmeldung</h2>
+            <form action="./bestaetigung.html">
+                <label for="name">Dein Name</label>
+                <input id="name" name="name" value="">
+                <br>
+                <input id="bestaetigung" type="checkbox" name="bestaetigung" value="ja">
+                <label for="bestaetigung">Die Anmeldebedingungen akzeptiere ich</label>
+                <br>
+                <label for="hasen">Magst du Einhörner?</label>
+                <select id="hasen" name="hasen" >
+                  <option value="nein">Nein</option>
+                  <option value="ja">Ja</option>
+                </select>
+                <br>
+                <button type="submit">Jetzt anmelden</button>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
