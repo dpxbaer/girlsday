@@ -1,0 +1,30 @@
+<html lang="de">
+  <head>
+    <title>GirlsDay</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="app">
+        <h2>{{ headline }}</h2>
+        <ul>
+            <li v-for="(name) in namen" v-bind:key="name">{{ name }}</li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      const App = {
+        data() {
+          return {
+            headline: "Hallo Welt",
+            namen: ["Anja", "Bella", "Chrissy"]
+          };
+        }
+      };
+
+      Vue.createApp(App).mount("#app");
+    </script>
+  </body>
+</html>

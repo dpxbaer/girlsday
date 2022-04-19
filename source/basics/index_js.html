@@ -1,0 +1,105 @@
+<html lang="de">
+    <head>
+        <title>GirlsDay</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>GirlsDay</h1>
+            <h2>Einführung</h2>
+            <p>Am 28.4. ist <a href="https://www.girls-day.de">GirlsDay</a>! Sei dabei, wenn du bei Pixelpark, <b>HTML lernen</b> möchtest.</p>
+            <p>Melde dich einfach unten an.</p>
+            <h2>Voraussetzung</h2>
+            <p>Ein eigener Computer wird vorausgesetzt.</p>
+            <img src="../mvp/unicorn.png" alt="Einhorn">
+            <div class="spalten grauer-hintergrund innenabstand">
+                <div>
+                    <h3>Bringe bitte mit</h3>
+                    <ul>
+                        <li>einen eigenen Computer</li>
+                        <li>ein sauberes Taschentuch</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Inhalte</h3>
+                    <ol>
+                        <li>HTML, Styling mit CSS</li>
+                        <li>Javascript</li>
+                        <li>und mehr</li>
+                    </ol>
+                </div>
+            </div>
+            <h2>Anmeldung</h2>
+            <form action="./bestaetigung.html">
+                <label for="name">Dein Name</label>
+                <input id="name" name="name" value="">
+                <br>
+                <input id="bestaetigung" type="checkbox" name="bestaetigung" value="ja">
+                <label for="bestaetigung">Die Anmeldebedingungen akzeptiere ich</label>
+                <br>
+                <label for="hasen">Magst du Einhörner?</label>
+                <select id="hasen" name="hasen" >
+                  <option value="nein">Nein</option>
+                  <option value="ja">Ja</option>
+                </select>
+                <br>
+                <button type="submit" class="grauer-hintergrund">Jetzt anmelden</button>
+            </form>
+        </main>
+        <footer></footer>
+
+        <script>
+            // Variablen sind Container mit etwas drin
+            var zahl = 2.345;
+            var text = "Ich bin ein Text";
+      
+            // mit Variablen etwas tun
+            var dasDoppelte = 2 * zahl;
+            var neuerText = text + " ohne einen Sinn.";
+      
+            // komplexere Variablen
+            var liste = [7, "Text", "13", zahl, ["gehen", "to go"]];
+            var objekt = {
+              name: "Peter",
+              alter: 16,
+              geburtsdatum: new Date(),
+              notizen: liste
+            };
+      
+            // Variablen mal eben ausgeben
+            console.log("Ich sage Hallo!");
+            console.log(objekt);
+            console.log("Der Name:", objekt.name);
+
+            // eine Bedingung testen
+            if (objekt.name == "Peter") {
+                console.log("Du bist Peter!");
+            }
+      
+            // Funktionen
+            function verdoppeln(zahl) {
+              var dasDoppelte = 2 * zahl;
+      
+              return dasDoppelte;
+            }
+      
+            var berechnet = verdoppeln(4);
+            console.log("das Doppelte ist", berechnet);
+      
+            // mit meinem HTML interagieren
+            function mache_interaktiv() {
+              const titel = document.querySelector("h1");
+              titel.innerHTML += " NEU!";
+              titel.addEventListener("click", function(event) {
+                event.target.classList.toggle("aktiv");
+              });
+            }
+      
+            mache_interaktiv();
+      
+        </script>
+    </body>
+</html>
