@@ -16,9 +16,11 @@
 - Jeder in der Gruppe arbeitet an seinem Computer
 - Eine Person aus der Gruppe teilt dabei ihren Bildschirm
 - Löst die Aufgaben gemeinsam in der Gruppe Schritt für Schritt
+
 ### Vorbereitung
 
 1. Öffnet folgende URL, um den Code auszuchecken und ein neues Projekt zu starten: https://codesandbox.io/s/github/dpxbaer/girlsday
+
 
 ### Workshop 1: HTML/CSS Grundlagen
 
@@ -66,6 +68,8 @@ html {
   font-size: 16px;
 }
 ```
+
+
 ### Workshop 2: VueJS Setup
 
 Ziel des Workshops ist das Wiederholen des VueJS-Setups
@@ -124,6 +128,7 @@ Ziel des Workshops ist das Kennenlernen der Möglichkeiten von VueJS
 12. Fügt einen Absatz (p-Element) vor dem Button ein, in dem eine Ausgabe erscheint "2 von 10 richtige Antworten" (mit korrekten Werten)
 13. Ergänzt einen click-Handler mit Namen `reset` für den Button, der die Property `input` für jeden Eintrag zurücksetzt (null), sofern dieser existiert!
 
+
 ### Workshop 4: Ausbau der VueJS
 
 Ziel des Workshops ist der weitere Ausbau der bisher programmierten Anwendung
@@ -139,6 +144,7 @@ Ziel des Workshops ist der weitere Ausbau der bisher programmierten Anwendung
 - Eine positive bzw. negative Rückmeldung informiert darüber, ob die Vokabel richtig gelöst wurde
 - Falsch gelöste Vokabeln werden am Ende der Liste noch einmal angefügt
 
+
 ### Workshop E: Umbau zur Browser-App
 
 Ziel des Workshops ist die Integration von vorbereitetem Code zur Bedienung als Web-App
@@ -152,6 +158,7 @@ Ziel des Workshops ist die Integration von vorbereitetem Code zur Bedienung als 
 7. Fügt am Ende dem main-Element im Body folgendes HTML-Element hinzu: `<vokabel-editor liste="standard"></vokabel-editor>`, damit ihr in eurem Browser gespeicherte Vokabeln bearbeiten könnt!
 8. Ergänzt nach dem main-Element ein Footer-Element mit einem Button: `<footer><button id="installButton">Installieren</button></footer>`! Es ermöglicht auf Android-Geräten die Installation als Web-App über deren Oberfläche.
 9. Das HTML-Dokument sollte nun in etwa dem in `workshops/F-deployment` entsprechen
+
 
 ### Workshop F: Deployment
 
