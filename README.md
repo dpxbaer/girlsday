@@ -84,11 +84,11 @@ Ziel des Workshops ist das Wiederholen des VueJS-Setups
 6. Ladet VueJS im Kopfbereich der HTML-Seite von der URL `https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js`!
 7. Erstellt eine neue Datei `main.js` und ladet diese am Ende des Bodys der HTML-Seite!
 8. Erzeugt darin mit `const App = {}` ein zunächst leeres App-Objekt!
-9. Initialisiert ebenfalls die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`!
+9. Initialisiert ebenfalls die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`! *Schreibt in die Zeile zuvor `// eslint-disable-next-line no-undef`, um das Linting abzuschalten!*
 10. Rendert die Werte für Headline und Message (aus dem Absatz) mit VueJS anstelle einer statischen Ausgabe!
 11. Erstellt eine neue Datei `vokabeln.js` und ladet diese direkt vor der Datei `main.js`!
-12. Erstellt in der Datei `vokabeln.js` eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt!
-13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert, sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : []`
+12. Erstellt in der Datei `vokabeln.js` eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt! *Schreibt in die Zeile vor dieser Funktion `// eslint-disable-next-line no-unused-vars`, um das Linting abzuschalten!*
+13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert, sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : [] // eslint-disable-line no-undef` *(Kommentar schaltet Linting ab)*
 14. Aktualisiert die Funktion `ladeMeineVokabeln` in `vokabeln.js` so, dass sie eine Liste von Objekten als Vokabeln zurückgibt (siehe Format als Anmerkung zu initialen Vokabeln)!
 15. Gebt für alle Einträge in `vocabulary` mit `v-for` jeweils ein div-Element mit der CSS-Klasse `entry` aus und ersetzt den statischen Text im inneren div-Element durch die Ausgabe des Wertes in `native` aus den Vobakel-Einträgen!
 16. Ergänzt im HTML jeden Vokabel-Eintrag um ein Eingabefeld, das mit `v-model` an `entry.input` gebunden ist, um dynamische Benutzereingaben entgegen zu nehmen!
