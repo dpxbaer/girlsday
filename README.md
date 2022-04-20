@@ -140,6 +140,18 @@ Ziel des Workshops ist der weitere Ausbau der bisher programmierten Anwendung
 
 Ziel des Workshops ist die Integration von vorbereitetem Code zur Bedienung als Web-App
 
+1. Wenn ihr keine funktionsfähige VueJS-App habt, könnt ihr die Dateien `index.html`, `main.js` und `style.css` aus dem Ordner `workshops/E-pwa` in den Hauptordner kopieren!
+2. Kopiert in jedem Fall die vier Dateien `app.js`, `manifest.json`, `pwa.js` und `sw.js` aus dem Ordner `workshops/E-pwa` in den Hauptordner!
+3. Fügt am Ende des Kopfbereiches eurer HTML-Seite die Verknüpfung der Manifest-Datei hinzu: `<link rel="manifest" href="manifest.json">`!
+4. Öffnet bei Bedarf die Manifest-Datei `manifest.json`, um Anpassungen vorzunehmen!
+5. Fügt am Ende des Kopfbereiches eurer HTML-Seite die Anweisung `<script type="module" src="./app.js"></script>` hinzu, um diese Datei zu laden und App-Funktionen zu ermöglichen!
+6. Fügt am Ende dem main-Element im Body folgendes HTML-Element hinzu: `<vokabel-editor liste="standard"></vokabel-editor>`! Vokabeln können anschließend 
+7. Ergänzt nach dem main-Element ein Footer-Element mit einem Button: `<footer><button id="installButton">Installieren</button></footer>`! Es ermöglicht auf Android-Geräten die Installation als Web-App über deren Oberfläche.
+8. Das HTML-Dokument sollte nun in etwa dem in `workshops/F-deployment` entsprechen
+
 ### Workshop F: Deployment
 
 Ziel des Workshops ist das Veröffentlichen eurer Projekte
+
+1. Wenn ihr keine funktionsfähige VueJS-App habt, könnt ihr auch alle oder ausgewählte Dateien aus dem Ordner `workshops/F-deployment` in den Hauptordner kopieren!
+2. Wie geht es weiter?

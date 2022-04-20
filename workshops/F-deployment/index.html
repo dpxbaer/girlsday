@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Dokumenten-Titel -->
+    <title>Vokabeltrainer</title>
+
+    <!-- Zeichensatz -->
+    <meta charset="UTF-8" />
+
+    <!-- Größe anpassen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- keine Suchmaschinen -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Javascript aus einer anderen Datei ausführen -->
+    <script src="https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js"></script>
+
+    <!-- Icon für die Browserzeile -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- CSS aus einer anderen Datei verlinken -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Dateiverknüpfungen für Web-App -->
+    <link rel="manifest" href="manifest.json">
+    <script type="module" src="./app.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Abfrage</h1>
+      <div id="app">
+          <h2>{{ headline }}</h2>
+          <p class="info">{{ message }}</p>
+          <div v-for="(entry, index) in vocabulary" v-bind:key="index">
+              <div class="entry" v-bind:class="{correct: isCorrect(entry), incorrect: !isCorrect(entry), missing: !entry.input}">
+                  <div>{{ entry.native }}</div>
+                  <input v-model="entry.input" />
+              </div>
+          </div>
+          <p>
+              {{ correctAnswered }} von {{ vocabulary.length }} richtige Antworten
+          </p>
+          <button @click="reset">Zurücksetzen</button>
+      </div>
+  
+      <img alt="Einhorn" src="./unicorn.png">
+
+      <vokabel-editor liste="standard"></vokabel-editor>
+    </main>
+    <footer>
+      <button id="installButton">Installieren</button>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
