@@ -11,12 +11,13 @@ self.addEventListener('install', event => {
           './',
           './index.html',
           './favicon.svg',
-          // './icon_512x512.png',
           './manifest.json',
-          './modules/pwa.js',
+          './app.js',
+          './pwa.js',
           './main.js',
-          './styles.css',
-          './unicorn.png'
+          './style.css',
+          './unicorn.png',
+          'https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js'
         ])
       )
   )
