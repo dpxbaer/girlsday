@@ -165,4 +165,9 @@ Ziel des Workshops ist die Integration von vorbereitetem Code zur Bedienung als 
 Ziel des Workshops ist das Veröffentlichen eurer Projekte
 
 1. Wenn ihr keine funktionsfähige VueJS-App habt, könnt ihr auch alle oder ausgewählte Dateien aus dem Ordner `workshops/F-deployment` in den Hauptordner kopieren!
-2. Wie geht es weiter?
+2. Gehe im Menü von Codesandbox auf "Deployment" (Rakete)!
+3. Wähle "Sign in" und melde dich mit deinem (vorhandenen) Account bei Google oder Github an!
+4. Wähle einen der unterstützten Provider Netlify oder Vercel für dein Deployment aus!
+5. Gehe im Menü von Codesandbox auf "Explorer" (Zettel)!
+6. Klicke auf den Pfeil nach unten bei "Files", um einen Export als ZIP-Datei zu starten und so deine Arbeit auf deinem eigenen Computer zu sichern!
+7. Mit dem Pfeil nach oben könntest du sie später wieder hochladen und deine Arbeit am Projekt wieder aufnehmen.
