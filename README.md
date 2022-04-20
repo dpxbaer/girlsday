@@ -77,13 +77,13 @@ Ziel des Workshops ist das Wiederholen des VueJS-Setups
 5. Was macht die CSS-Angabe `padding`?
 6. Ladet VueJS im Kopfbereich der HTML-Seite von der URL `https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js`!
 7. Erstellt eine neue Datei `main.js` und ladet diese am Ende des Bodys der HTML-Seite!
-8. Erzeugt mit `const App = {}` ein zunächst leeres App-Objekt!
-9. Initialisiert die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`!
+8. Erzeugt darin mit `const App = {}` ein zunächst leeres App-Objekt!
+9. Initialisiert ebenfalls die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`!
 10. Rendert die Werte für Headline und Message (aus dem Absatz) mit VueJS anstelle einer statischen Ausgabe!
 11. Erstellt eine neue Datei `vokabeln.js` und ladet diese direkt vor der Datei `main.js`!
 12. Erstellt in der Datei `vokabeln.js` eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt!
-13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : []`
-14. Aktualisiert die Funktion `ladeMeineVokabeln` in `vokabeln.js` so, dass sie eine Liste von Objekten als Vokabeln zurückgibt (siehe dazu Anmerkung zu initialen Vokabeln)!
+13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert, sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : []`
+14. Aktualisiert die Funktion `ladeMeineVokabeln` in `vokabeln.js` so, dass sie eine Liste von Objekten als Vokabeln zurückgibt (siehe Format als Anmerkung zu initialen Vokabeln)!
 15. Gebt für alle Einträge in `vocabulary` mit `v-for` jeweils ein div-Element mit der CSS-Klasse `entry` aus und ersetzt den statischen Text im inneren div-Element durch die Ausgabe des Wertes in `native` aus den Vobakel-Einträgen!
 16. Ergänzt im HTML jeden Vokabel-Eintrag um ein Eingabefeld, das mit `v-model` an `entry.input` gebunden ist, um dynamische Benutzereingaben entgegen zu nehmen!
 17. Gebt den Wert der Benutzereingabe zur Kontrolle des Funktionsweise ebenfalls für jeden Eintrag aus!
@@ -144,13 +144,14 @@ Ziel des Workshops ist der weitere Ausbau der bisher programmierten Anwendung
 Ziel des Workshops ist die Integration von vorbereitetem Code zur Bedienung als Web-App
 
 1. Wenn ihr keine funktionsfähige VueJS-App habt, könnt ihr die Dateien `index.html`, `main.js` und `style.css` aus dem Ordner `workshops/E-pwa` in den Hauptordner kopieren!
-2. Kopiert in jedem Fall die vier Dateien `app.js`, `manifest.json`, `pwa.js` und `sw.js` aus dem Ordner `workshops/E-pwa` in den Hauptordner!
+2. Kopiert in jedem Fall die fünf Dateien `app.js`, `lokale-vokabeln.js`, `manifest.json`, `pwa.js` und `sw.js` aus dem Ordner `workshops/E-pwa` in den Hauptordner!
 3. Fügt am Ende des Kopfbereiches eurer HTML-Seite die Verknüpfung der Manifest-Datei hinzu: `<link rel="manifest" href="manifest.json">`!
 4. Öffnet bei Bedarf die Manifest-Datei `manifest.json`, um Anpassungen vorzunehmen!
 5. Fügt am Ende des Kopfbereiches eurer HTML-Seite die Anweisung `<script type="module" src="./app.js"></script>` hinzu, um diese Datei zu laden und App-Funktionen zu ermöglichen!
-6. Fügt am Ende dem main-Element im Body folgendes HTML-Element hinzu: `<vokabel-editor liste="standard"></vokabel-editor>`! Vokabeln können anschließend 
-7. Ergänzt nach dem main-Element ein Footer-Element mit einem Button: `<footer><button id="installButton">Installieren</button></footer>`! Es ermöglicht auf Android-Geräten die Installation als Web-App über deren Oberfläche.
-8. Das HTML-Dokument sollte nun in etwa dem in `workshops/F-deployment` entsprechen
+6. Ladet nach der Datei `vokabeln.js` und vor `main.js` die kopierte Datei `lokale-vokabeln.js`, um im eurem Browser gespeicherte Vokabeln laden zu können! 
+7. Fügt am Ende dem main-Element im Body folgendes HTML-Element hinzu: `<vokabel-editor liste="standard"></vokabel-editor>`, damit ihr in eurem Browser gespeicherte Vokabeln bearbeiten könnt!
+8. Ergänzt nach dem main-Element ein Footer-Element mit einem Button: `<footer><button id="installButton">Installieren</button></footer>`! Es ermöglicht auf Android-Geräten die Installation als Web-App über deren Oberfläche.
+9. Das HTML-Dokument sollte nun in etwa dem in `workshops/F-deployment` entsprechen
 
 ### Workshop F: Deployment
 
