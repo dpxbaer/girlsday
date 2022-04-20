@@ -1,0 +1,42 @@
+:root {
+  --primary-color: red;
+  --secondary-color: lightgrey;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  cursor: pointer;
+  padding: 4px;
+}
+
+button:hover {
+  border-color: var(--primary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+img {
+  margin: 1rem auto;
+  display: block;
+}
+
+input {
+  line-height: 32px;
+  width: 100%;
+}
+
+.info {
+  padding-bottom: 1rem;
+}
+
+.entry {
+    padding: 1rem;
+}
