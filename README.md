@@ -20,6 +20,7 @@
 ### Vorbereitung
 
 1. Öffnet folgende URL, um den Code auszuchecken und ein neues Projekt zu starten: https://codesandbox.io/s/github/dpxbaer/girlsday
+2. Sieh dir das Ergebnis des Workshops an, wenn du magst unter https://dpxbaer.github.io/girlsday/workshops/F-deployment/
 
 
 ### Workshop 1: HTML/CSS Grundlagen
