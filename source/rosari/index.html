@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girls Day</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Girls Day</h1>
+      <div class="img-container">
+        <img src="assets/img/unicorn_transparent.png" alt="Einhorn" />
+      </div>
+    </header>
+    <main>
+      <h2>Einführung</h2>
+      <p>
+        Am 28.4. ist <a href="https://www.girls-day.de">GirlsDay</a>! Sei dabei,
+        wenn du bei Pixelpark, <b>HTML lernen</b> möchtest.
+      </p>
+      <p>Melde dich einfach unten an.</p>
+      <h2>Voraussetzung</h2>
+      <p>Ein eigener Computer wird vorausgesetzt.</p>
+      <div class="main-container">
+        <div>
+          <h3>Bringe bitte mit:</h3>
+          <ul>
+            <li>einen eigenen Computer</li>
+            <li>ein sauberes Taschentuch</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Inhalte:</h3>
+          <ol>
+            <li>HTML, Styling mit CSS</li>
+            <li>Javascript</li>
+            <li>und mehr</li>
+          </ol>
+        </div>
+      </div>
+      <h2>Anmeldung</h2>
+      <form action="confirmation.html">
+        <label for="name">Dein Name</label>
+        <input id="name" name="name" value="" placeholder="Dein Name" />
+        <br />
+        <input
+          id="bestaetigung"
+          type="checkbox"
+          name="bestaetigung"
+          value="ja"
+        />
+        <label for="bestaetigung">Die Anmeldebedingungen akzeptiere ich</label>
+        <br />
+        <label for="hasen">Magst du Einhörner?</label>
+        <select id="hasen" name="hasen">
+          <option value="nein">Nein</option>
+          <option value="ja">Ja</option>
+        </select>
+        <br />
+        <button id="btn" type="submit">Jetzt Anmelden</button>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
