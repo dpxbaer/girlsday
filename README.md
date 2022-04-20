@@ -80,12 +80,15 @@ Ziel des Workshops ist das Wiederholen des VueJS-Setups
 8. Erzeugt mit `const App = {}` ein zunächst leeres App-Objekt!
 9. Initialisiert die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`!
 10. Rendert die Werte für Headline und Message (aus dem Absatz) mit VueJS anstelle einer statischen Ausgabe!
-11. Erstellt eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt!
-12. Ergänzt ein weiteres Daten-Attribut `vocabulary`, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln` bezieht!
-13. Aktualisiert die Funktion `ladeMeineVokabeln` so, dass sie eine Liste von Objekten als Vokabeln zurückgibt (siehe dazu Anmerkung zu initialen Vokabeln)!
-14. Gebt für alle Einträge in `vocabulary` mit `v-for` jeweils ein div-Element mit der CSS-Klasse `entry` aus und ersetzt den statischen Text im inneren div-Element durch die Ausgabe des Wertes in `native` aus den Vobakel-Einträgen!
-15. Ergänzt im HTML jeden Vokabel-Eintrag um ein Eingabefeld, das mit `v-model` an `entry.input` gebunden ist, um dynamische Benutzereingaben entgegen zu nehmen!
-16. Gebt den Wert der Benutzereingabe zur Kontrolle des Funktionsweise ebenfalls für jeden Eintrag aus!
+11. Erstellt eine neue Datei `vokabeln.js` und ladet diese direkt vor der Datei `main.js`!
+12. Erstellt in der Datei `vokabeln.js` eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt!
+13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : []`
+14. Aktualisiert die Funktion `ladeMeineVokabeln` in `vokabeln.js` so, dass sie eine Liste von Objekten als Vokabeln zurückgibt (siehe dazu Anmerkung zu initialen Vokabeln)!
+15. Gebt für alle Einträge in `vocabulary` mit `v-for` jeweils ein div-Element mit der CSS-Klasse `entry` aus und ersetzt den statischen Text im inneren div-Element durch die Ausgabe des Wertes in `native` aus den Vobakel-Einträgen!
+16. Ergänzt im HTML jeden Vokabel-Eintrag um ein Eingabefeld, das mit `v-model` an `entry.input` gebunden ist, um dynamische Benutzereingaben entgegen zu nehmen!
+17. Gebt den Wert der Benutzereingabe zur Kontrolle des Funktionsweise ebenfalls für jeden Eintrag aus!
+
+**Hinweis:** Die Auslagerung der Funktion `ladeMeineVokabeln` und ihrer initialer Werte erfolgt, um ein späteres Überschreiben zu ermöglichen.
 
 Initiale Vokabeln:
 

@@ -15,6 +15,8 @@ self.addEventListener('install', event => {
           './app.js',
           './pwa.js',
           './main.js',
+          './vokabeln.js',
+          './lokale-vokabeln.js',
           './style.css',
           './unicorn.png',
           'https://unpkg.com/vue@3.2.28/dist/vue.global.prod.js'

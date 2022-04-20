@@ -1,14 +1,5 @@
 import { installer, serviceWorker } from './pwa.js';
 
-// override existing function to load from persistent store
-window.ladeMeineVokabeln = (listenname) => {
-    if (listenname && localStorage.getItem(listenname)) {
-      return JSON.parse(localStorage.getItem(listenname))
-    }
-  
-    return initialeVokabeln || []
-}
-
 (async () => {
     const serviceWorkerRegistration = await serviceWorker('./sw.js', './');
     installer('#installButton');
