@@ -1,4 +1,4 @@
-## Dein GirlsDay
+## Euer GirlsDay
 
 - Als IT Entwicklerin in der Agentur
 - Grundbausteine einer Internetseite
@@ -10,17 +10,18 @@
 
 ## Workshops
 
-- Bildet kleinere Gruppen anhand gemeinsamer Interessen und löst die Aufgaben im Team
-- Jeder in der Gruppe arbeitet sich zunächst durch den Punkt Vorbereitung mit gegenseitiger Hilfe
-- Sucht euch als Gruppe je nach Interesse einen Startpunkt aus
+- Bildet kleinere Gruppen anhand gemeinsamer Interessen und löst die Workshop-Aufgaben im Team
+- Jeder in eurer Gruppe öffnet zunächst das Projekt auf Codesandbox, wie unter Vorbereitung beschrieben
+- Sucht euch als Gruppe je nach Interesse einen Workshop 1-4 aus
 - Jeder in der Gruppe arbeitet an seinem Computer
 - Eine Person aus der Gruppe teilt dabei ihren Bildschirm
 - Löst die Aufgaben gemeinsam in der Gruppe Schritt für Schritt
 
 ### Vorbereitung
 
-1. Öffnet folgende URL, um den Code auszuchecken und ein neues Projekt zu starten: https://codesandbox.io/s/github/dpxbaer/girlsday
-2. Sieh dir das Ergebnis des Workshops an, wenn du magst unter https://dpxbaer.github.io/girlsday/workshops/F-deployment/
+1. Öffnet die folgende URL, um diese Anleitung zu den Workshops in einer formatierten Version zu sehen: https://github.com/dpxbaer/girlsday
+2. Öffnet folgende URL, um den Code auszuchecken und ein neues Projekt zu starten: https://codesandbox.io/s/github/dpxbaer/girlsday
+3. Seht euch das Ergebnis des Workshops an, wenn ihr möchtet: https://dpxbaer.github.io/girlsday/workshops/F-deployment/
 
 
 ### Workshop 1: HTML/CSS Grundlagen
