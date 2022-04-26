@@ -7,6 +7,10 @@
    --headline-color: #069FA8;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -29,6 +33,7 @@ h2 {
 
 a {
     color: var(--font-color);
+    text-decoration: none;
 }
 
 .img-container {
@@ -80,4 +85,86 @@ button:hover {
 
 #confirmation {
     text-align: center;
+}
+
+/* --- CSS Page --- */
+
+div {
+    position: relative;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#intro, #syntax, #order {
+    height: 82vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#syntax > ul, #order > ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#syntax > h2, #selector > h2 {
+    text-align: center;
+}
+
+#syntax {
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-container > div > h3 {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#selector {
+    height: 95vh;
+    width: 100%;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#third-arrow {
+    margin-left: 47%;
+}
+
+#order {
+    line-height: 40px;
+}
+
+#flip {
+    transform: rotate(180deg);
+}
+
+.arrow-down {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    100% {
+        top: 50px;
+        opacity: 0.8;
+    }
 }

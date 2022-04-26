@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS</h1>
+    </header>
+    <main>
+        <div id="intro">
+            <h2>Was ist CSS?</h2>
+            <p>CSS = Cascading Style Sheet</p>
+            <p>Aussehen der HTML-Elemente festlegen</p>
+            <div class="arrow-down">
+                <a href="#syntax"><img class="arrow" src="assets/img/icons8-double-down-50.png"></a>
+            </div>
+        </div>
+        <div id="syntax">
+            <h2>Syntax</h2>
+            <ul>
+                <li>Inline: mit einem Style-Attribut &lt;p style="color:red";&gt;</li>
+                <li>Intern: mit einem &lt;style&gt; - Element</style></li>
+                <li>Extern: den CSS-File mit in dem &lt;head&gt; - Tag des HTML einbinden</li>
+            </ul>
+            <div class="arrow-down">
+                <a href="#selector"><img class="arrow" src="assets/img/icons8-double-down-50.png"></a>
+            </div>
+        </div>
+        <div id="selector">
+            <h2>Selektoren und Deklarationen</h2>
+            <div class="flex-container">
+                <div>
+                    <h3>Selektor</h3>
+                    <ul>
+                        <li>Type: Typ des HTML ELements</li>
+                        <li>Class: Klassen werden verwendet, um die gleichen Styles für mehrere Elemente anzuwenden</li>
+                        <li>ID: Styles für ein einziges HTML-Element; kann nur einmal verwendet werden</li>
+                        <li>Pseudoklasse: Styles für bestimmte Zustände der Elemente, z.B. hover oder focus</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Deklaration</h3>
+                <ul>
+                    <li>Eigenschaft (property): welche visuelle Merkmale sollen verändert werden</li>
+                    <li>Wert (value): wie die Eigenschaft verändert werden soll</li>
+                </ul>
+                </div>
+            </div>
+            <div class="arrow-down">
+                <a href="#order"><img id="third-arrow" class="arrow" src="assets/img/icons8-double-down-50.png"></a>
+            </div>
+        </div>
+        <div id="order">
+            <h2>Reihenfolge</h2>
+            <ul>
+                <li>In einem HTML können mehrere Stylesheets verwendet werden</li>
+                <li>Das HTML muss wissen, welche Stylesheet-Regeln für welche HTML-Elemente gelten</li>
+                <ol>
+                    <li>ID</li>
+                    <li>Class</li>
+                    <li>ID</li>
+                </ol>
+            </ul>
+            <div class="arrow-down">
+                <a href="#intro"><img id="flip" class="arrow" src="assets/img/icons8-double-down-50.png"></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
