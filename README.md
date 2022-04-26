@@ -85,7 +85,7 @@ Ziel des Workshops ist das Wiederholen des VueJS-Setups
 7. Erstellt eine neue Datei `main.js` und ladet diese am Ende des Bodys der HTML-Seite!
 8. Erzeugt darin mit `const App = {}` ein zunächst leeres App-Objekt!
 9. Initialisiert ebenfalls die VueJS-App und bindet sie an die ID `app` mit dem Befehl `Vue.createApp(App).mount('#app')`! *Schreibt in die Zeile zuvor `// eslint-disable-next-line no-undef`, um das Linting abzuschalten!*
-10. Rendert die Werte für Headline und Message (aus dem Absatz) mit VueJS anstelle einer statischen Ausgabe!
+10. Rendert die Werte für Headline und Message (aus dem Absatz) mit VueJS anstelle einer statischen Ausgabe als Daten der App!
 11. Erstellt eine neue Datei `vokabeln.js` und ladet diese direkt vor der Datei `main.js`!
 12. Erstellt in der Datei `vokabeln.js` eine Funktion `ladeMeineVokabeln`, welche ein leeres Array zurückgibt! *Schreibt in die Zeile vor dieser Funktion `// eslint-disable-next-line no-unused-vars`, um das Linting abzuschalten!*
 13. Ergänzt ein weiteres Daten-Attribut `vocabulary` in VueJS, das seine Daten aus dem Aufruf der Funktion `ladeMeineVokabeln`mit dem übergebenen Parameter "standard" bezieht! Wenn die Funktion nicht existiert, sollte eine leere Liste übergeben werden: `ladeMeineVokabeln ? ladeMeineVokabeln('standard') : [] // eslint-disable-line no-undef` *(Kommentar schaltet Linting ab)*
