@@ -77,7 +77,7 @@ html {
 Ziel des Workshops ist das Wiederholen des VueJS-Setups
 
 1. Kopiert aus dem Ordner `workshops/2-vue` alle Dateien in den Hauptordner oder erweitert euren eigenen bisher erarbeiteten Projektstand!
-2. Wie werden das Styling geladen?
+2. Wie wird das Styling geladen?
 3. Was ist `--primary-color`?
 4. Wie werden Vorder-, Hintergrund und Rahmenfarben in CSS festgelegt?
 5. Was macht die CSS-Angabe `padding`?
